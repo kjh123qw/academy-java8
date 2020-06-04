@@ -185,7 +185,7 @@ public class ClassEngine {
 		System.out.println("------------------------------------------------------------");
 		System.out.println("[MAIN MENU] > [CLASS] > [LIST]");
 		System.out.println("==> MSG: class list");
-		System.out.println("    <Class you can apply>");
+		System.out.println("    <Classes you can apply>");
 		if(applyClassList == null) {
 			ArrayList<Subject> tempclassList = JsonToObejct.subjectObjectArray(DBUtil.academyList(State.Apply));
 			applyClassList = tempclassList.stream().sorted().collect(Collectors.toCollection(ArrayList::new));
@@ -199,7 +199,7 @@ public class ClassEngine {
 	            System.out.println(sb);
 	        }
         }
-		System.out.println("    <Class schedule>");
+		System.out.println("    <Classes schedule>");
 		if(expectedClassList == null) {
 			ArrayList<Subject> tempclassList = JsonToObejct.subjectObjectArray(DBUtil.academyList(State.Expected));
 			expectedClassList = tempclassList.stream().sorted().collect(Collectors.toCollection(ArrayList::new));
